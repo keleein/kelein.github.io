@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简介</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url('./assets/iTab-0.jpg');
+            background-size: 100% 100%;
+            overflow: scroll;
+            text-align: center;
+        }
+        body::-webkit-scrollbar{      display:none    }
+        .container {
+            height: 100%;
+            width: 40%;
+            margin: 0 auto;
+        }
+        h1 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 34px;
+        }
+        .navigate {
+            height: 22px;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        .navigate > span {
+            display: inline-block;
+            width: 20%;
+        }
+        .title_resume {
+            padding-top: 10px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .base {
+            height: 300px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .education {
+            height: 300px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .project {
+            height: 300px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .awards {
+            height: 300px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .s_title {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .img_container {
+            display: inline-block;
+            height: 200px;
+            width: 175px;
+            background-color: white;
+            margin-top: 20px;
+            margin-left: 40px;
+            padding: 0;
+            background-image: url('./assets/certification.webp');
+            background-repeat: no-repeat;
+            background-size: 175px 200px;
+        }
+        .base,
+        .education,
+        .project,
+        .awards {
+            box-sizing: border-box;
+        }
+        .layout_container {
+            display: inline-block;
+            height: 92%;
+            width: 40%;
+        }
+        .base_ul {
+            display: inline-block;
+            width: 55%;
+        }
+        .hr-solid {
+            border: 0;
+            border-top: 1px solid #d0d0d5;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        a:hover {
+            font-weight: bold;
+        }
+        li {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+<!--        导航栏-->
+        <div class="navigate">
+            <span>
+                <a href="#T1">基本信息</a>
+            </span>
+            <span>
+                <a href="#T2">教育经历</a>
+            </span>
+            <span>
+                <a href="#T3">项目经验</a>
+            </span>
+            <span>
+                <a href="#T4">奖项&证书</a>
+            </span>
+            <hr class="hr-solid">
+        </div>
+
+<!--        标题-->
+        <div class="title_resume">
+            <h1>RESUME</h1>
+        </div>
+
+<!--        简介内容-->
+        <div class="content">
+
+            <div class="base">
+
+                <div class="s_title"><a name="T1">基本信息</a></div>
+                <hr class="hr-solid">
+
+                <span class="layout_container">
+                    <span class="img_container"></span>
+                </span>
+
+                <span class="base_ul">
+                    <ul>
+                        <li>
+                            姓名：张三
+                        </li>
+                        <li>
+                            年龄：18岁
+                        </li>
+                        <li>
+                            电话:123456789
+                        </li>
+                        <li>
+                            邮箱：123456789@163.com
+                        </li>
+                        <li>
+                            人生名言：今天最棒的不是你的表现而是你的出现
+                        </li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="education">
+
+                <div class="s_title"><a name="T2">教育经历</a></div>
+                <hr class="hr-solid">
+
+                <div style="height: 100%;width: 100%;text-align: left;padding-left: 20px;">
+                    <div>2008-2012</div>
+                    <p>***************************************************</p>
+                    <div>20012-2016</div>
+                    <p>***************************************************</p>
+                    <div>20016-2023</div>
+                    <p>***************************************************</p>
+                </div>
+
+            </div>
+            <div class="project">
+
+                <div class="s_title"><a name="T3">项目经验</a></div>
+                <hr class="hr-solid">
+
+                <div style="height: 100%;width: 100%;text-align: left;padding-left: 20px;">
+                    <div>学生管理系统</div>
+                    <p>***************************************************</p>
+                    <div>邮件收发平台</div>
+                    <p>***************************************************</p>
+                    <div>外卖订单系统</div>
+                    <p>***************************************************</p>
+                </div>
+
+            </div>
+            <div class="awards">
+
+                <div class="s_title"><a name="T4">奖项&证书</a></div>
+                <hr class="hr-solid">
+
+                <div style="height: 90%;width: 100%;text-align: left;padding-left: 20px;">
+                    <div>全国大学生创新创业竞赛</div>
+                    <p>***************************************************</p>
+                    <div>数学建模大赛</div>
+                    <p>***************************************************</p>
+                    <div>全国大学生计算机设计大赛</div>
+                    <p>***************************************************</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
